@@ -1,0 +1,34 @@
+class Principal
+{
+	
+		String name="Aditya";
+		
+	
+}
+class Hod extends Principal
+{
+	String dept="BCS";
+	String hname="AK";
+}
+class Teacher extends Hod
+{
+	String sub="Java";
+	String tname="kangare";
+}
+public class Inheri
+{
+
+	public static void main(String[] args) 
+	{
+		Teacher tr=new Teacher();
+		System.out.println("Principal Name: "+tr.name);
+		System.out.println("\nHOD Name: "+tr.hname);
+		System.out.println("Department: "+tr.dept);
+		
+		System.out.println("\nTeacher Subject: "+tr.sub);
+		System.out.println("Teacher Name: "+tr.tname);
+		
+		
+	}
+
+}
