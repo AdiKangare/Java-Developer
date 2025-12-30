@@ -1,0 +1,24 @@
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class list
+{
+
+	public static void main(String[] args)
+	{
+		LinkedList li=new LinkedList();
+		li.add("Orange");
+		li.add("Black");
+		li.add("Blue");
+		li.add("pink");
+		System.out.println(li);
+		li.addLast("Brown");
+		System.out.println("\nLast added:"+li);
+		li.removeFirst();
+		System.out.println("\nFirst Remove:"+li);
+		System.out.println(li.size());
+		System.out.println("\nList In Reverse Order:");
+		System.out.println(li.reversed());
+	}
+
+}
