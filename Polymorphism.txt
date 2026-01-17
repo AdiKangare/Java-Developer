@@ -1,0 +1,29 @@
+package Adii;
+class A 
+{ 
+	void add() 
+	{ 
+		int x,y,z; 
+		x=100; 
+		y=400; 
+		z=x+y; 
+		System.out.println("Addition:"+z); 
+	} 
+} 
+class B extends A 
+{ 
+	void add(int a,int b) 
+	{ 
+		int c=a+b; 
+		System.out.println("Addition:"+c); 
+	} 
+} 
+public class Poly 
+{ 
+	public static void main(String args[]) 
+	{ 
+		B b1=new B(); 
+		b1.add(); 
+		b1.add(33,44); 
+	} 
+} 
