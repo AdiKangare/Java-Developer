@@ -1,0 +1,63 @@
+package Adii;
+
+class Employee 
+{ 
+	private int eid=1; 
+	private String name="surekha"; 
+	private int salary=30000; 
+	
+	Employee(int eid,String name,int salary) 
+	{ 
+		this.eid=eid; 
+		this.name=name; 
+		this.salary=salary; 
+	} 
+	//getter and setter 
+	int getEid() 
+	{ 
+		return eid; 
+	} 
+	String getName() 
+	{ 
+		return name; 
+	} 
+	int getSalary() 
+	{ 
+		return salary; 
+	} 
+	void setEid(int eid) 
+	{ 
+		this.eid=eid; 
+	} 
+	void setName(String name) 
+	{ 
+		this.name=name; 
+		
+	} 
+	void setSalary(int salary) 
+	{ 
+		this.salary=salary; 
+	} 
+	public String toString() 
+	{ 
+		return "Eid:"+eid+"\tName:"+name+"\tSalary:"+salary; 
+	} 
+} 
+public class Encaps
+{ 
+	public static void main(String[] args) 
+	{ 
+		
+		Employee e1=new Employee(101,"naman",90000); 
+		System.out.println(e1.getEid()); 
+		System.out.println(e1.getName()); 
+		System.out.println(e1.getSalary()); 
+		e1.setEid(200); 
+		e1.setName("saya"); 
+		e1.setSalary(50000); 
+		System.out.println(e1.getEid()); 
+		System.out.println(e1.getName()); 
+		System.out.println(e1.getSalary()); 
+		System.out.println(e1); 
+	} 
+} 
