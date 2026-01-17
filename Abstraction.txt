@@ -1,0 +1,41 @@
+package Adii;
+abstract class Mahindra
+{ 
+	void Scorpio() 
+	{ 
+		System.out.println("\nScorpio Car Is Good In LOOK ....."); 
+	} 
+	void XUV() 
+	{ 
+		System.out.println("\nXUV is Good For Offroading ..... "); 
+	} 
+	abstract void Fans();
+} 
+abstract class Toyota extends Mahindra 
+{ 
+	void Fans() 
+	{ 
+		System.out.println("\nFans Following Of Both Compony Cars Are More .... "); 
+	} 
+	abstract void Price(); 
+} 
+class Hyundai extends Toyota 
+{ 
+	void Price() 
+	{ 
+		System.out.println("\nAccording To Safety And Fan Following Descides The Price.... "); 
+	} 
+	 
+} 
+public class Abstr 
+{ 
+	public static void main(String[] args) 
+	{ 
+		Hyundai a1=new Hyundai(); 
+		a1.Scorpio(); 
+		a1.XUV(); 
+		a1.Fans(); 
+		a1.Price(); 
+		
+	} 
+}
